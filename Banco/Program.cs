@@ -12,10 +12,10 @@ public class Program
         ContaCorrente c1 = new ContaCorrente();
         SeguroDeVida s = new SeguroDeVida();
 
-        Console.WriteLine("******BANCO******");
         do
         {
-            Console.WriteLine("\nEscolha uma conta:");
+            Console.WriteLine("******BANCO******");
+            Console.WriteLine("Escolha uma conta:");
             Console.Write("1 - Conta Corrente\n2 - Conta Poupança\n3 - Seguro de Vida \n0 - Sair\nResposta:");
             opcao = int.Parse(Console.ReadLine());
 
@@ -54,7 +54,7 @@ public class Program
                     break;
                 case 2:
                     do
-                    {
+                    { 
                         Console.WriteLine("\nDigite:");
                         Console.Write("1 - Sacar\n2 - Depositar\n3 - Obter Saldo\n0 - Sair\nResposta:");
                         opcao1 = int.Parse(Console.ReadLine());
@@ -83,7 +83,6 @@ public class Program
                 case 3:
                     s.CalculaTributos();
                     break;
-
             }
 
         } while (opcao != 0);
